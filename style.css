@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* .container {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+} */
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.15),
+    0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+.details {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#saveBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+
+#saveBtn:hover {
+  background: #23a379;
+  transform: translateY (-2px);
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+  word-break: break-word;
+}
+
+.action-btn {
+  background: #28b487;
+  color: white;
+
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  margin-right: 8px;
+
+  transition: 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #23a379;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+}
